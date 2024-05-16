@@ -1,0 +1,33 @@
+<!-- Weather app with tailwind css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css">
+</head>
+<body>
+    <div class="container mx-auto">
+        <div class="flex justify-center items-center h-screen">            
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-red-500 px-2 py-4 rounded-md text-white font-bold text-lg text-center hidden" id="warning_div">
+                    Hey
+                </div>
+                <h1 class="text-2xl font-bold mb-2">Weather App</h1>
+                <form action="#" id="weather_form">
+                    <input type="text" id="city_name" name="city" placeholder="Enter city name" value="Nairobi" class="p-2 rounded-lg border border-gray-300 w-full">
+                    <button type="button" id="submit_btn" class="bg-blue-500 text-white p-2 rounded-lg w-full mt-2">Get Weather</button>
+                </form>
+                <div class="mt-4">
+                    <h2 class="text-xl font-bold">City Name : <span id="city_name_value"></span></h2>
+                    <p class="text-gray-700">Temperature: <span id="temp"></span></p>
+                    <p class="text-gray-700">Humidity: <span id="hum"></span></p>
+                    <p class="text-gray-700">Pressure: <span id="press"></span></p>
+                    <p class="text-gray-700">Description: <span id="description"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body> 
+    <script src="index.js"></script>
+</html>
